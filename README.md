@@ -67,3 +67,18 @@ command shift v to preview
 [Google] (https://vscodeedu.com/courses/intro-to-python)
 
 ! [Alt text] (path to your png image)
+
+user_age =[20, 14 15]
+
+for item in user_age:
+    need to tab the rest
+    if
+    elif
+    else
+
+
+user_age = int(input("Enter your age:"))
+if user_age<=10:
+    print("Your are a child")
+elif user_age <= 18:
+    print("You are an adult")
