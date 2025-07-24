@@ -1,0 +1,18 @@
+🎉 Game Results 🎉
+Final life points: 6
+
+📊 Score Breakdown 📊
+Math              : █ (1)
+Budgeting         :  (0)
+Project Management:  (0)
+Tech              : █ (1)
+Cybersecurity     :  (0)
+Items             : ██ (2)
+Hazards           : ██ (2)
+
+🏅 Leaderboard 🏅
+1. 🥇 Aria - 10 points
+2. 🥈 Zane - 8 points
+3. 🥉 Liam - 7 points
+4. 🎖️ You - 6 points
+5. 🎖️ Maya - 3 points
