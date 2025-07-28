@@ -1,0 +1,440 @@
+Adult@DAEDMAC01 DAE Lisa % ls
+logic_1			python_2		version_control_1
+prompt_engineering_1	unix_1
+python_1		unix_2
+Adult@DAEDMAC01 DAE Lisa % git init
+Initialized empty Git repository in /Users/adult/Desktop/DAE Lisa/.git/
+Adult@DAEDMAC01 DAE Lisa % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	logic_1/
+	python_1/
+	python_2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Adult@DAEDMAC01 DAE Lisa % git add .
+Adult@DAEDMAC01 DAE Lisa % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   logic_1/Mini Project Task Tracker.jam
+	new file:   python_1/July9.py
+	new file:   python_2/July9.py
+
+Adult@DAEDMAC01 DAE Lisa % git remote add origin https://github.com/lisah246/DAE-Folder.git
+Adult@DAEDMAC01 DAE Lisa % git config --global user.name "lisah246"
+Adult@DAEDMAC01 DAE Lisa % git config --global user.email "lisah246@gmail.com"
+Adult@DAEDMAC01 DAE Lisa % git commit -m "Updated Figma Flowchart to accurately reflect logic label and final image"
+[main (root-commit) 5b14993] Updated Figma Flowchart to accurately reflect logic label and final image
+ 4 files changed, 278 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 logic_1/Mini Project Task Tracker.jam
+ create mode 100644 python_1/July9.py
+ create mode 100644 python_2/July9.py
+Adult@DAEDMAC01 DAE Lisa % git push --all
+Username for 'https://github.com': khvjky
+Password for 'https://khvjky@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/lisah246/DAE-Folder.git/'
+Adult@DAEDMAC01 DAE Lisa % git push --all
+Username for 'https://github.com': lisah246
+Password for 'https://lisah246@github.com': 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 62.44 KiB | 31.22 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/lisah246/DAE-Folder.git
+ * [new branch]      main -> main
+Adult@DAEDMAC01 DAE Lisa % git add .
+Adult@DAEDMAC01 DAE Lisa % git commit -m "Duplicated python file to test push" 
+[main 3b8d902] Duplicated python file to test push
+ 5 files changed, 139 insertions(+)
+ create mode 100644 logic_1/.DS_Store
+ create mode 100644 logic_1/Mini Project Task Tracker (2).jam
+ delete mode 100644 logic_1/Mini Project Task Tracker.jam
+ create mode 100644 python_2/July9 copy.py
+Adult@DAEDMAC01 DAE Lisa % git push --all
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 61.80 KiB | 30.90 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lisah246/DAE-Folder.git
+   5b14993..3b8d902  main -> main
+Adult@DAEDMAC01 DAE Lisa % pwd
+/Users/adult/Desktop/DAE Lisa
+Adult@DAEDMAC01 DAE Lisa % ls
+logic_1			python_2		version_control_1
+prompt_engineering_1	unix_1
+python_1		unix_2
+Adult@DAEDMAC01 DAE Lisa % git add .
+git: error: couldn't create cache file '/var/folders/rv/3d0gschd6fnd1c8dqpmjsvc40000gs/T/xcrun_db-MF27hbSg' (errno=No space left on device)
+git: error: couldn't create cache file '/var/folders/rv/3d0gschd6fnd1c8dqpmjsvc40000gs/T/xcrun_db-aiQK34LZ' (errno=No space left on device)
+fatal: Unable to create '/Users/adult/Desktop/DAE Lisa/.git/index.lock': No space left on device
+Adult@DAEDMAC01 DAE Lisa % git add .
+git: error: couldn't create cache file '/var/folders/rv/3d0gschd6fnd1c8dqpmjsvc40000gs/T/xcrun_db-XaS1GDuY' (errno=No space left on device)
+git: error: couldn't create cache file '/var/folders/rv/3d0gschd6fnd1c8dqpmjsvc40000gs/T/xcrun_db-VMbJLhG8' (errno=No space left on device)
+fatal: Unable to create '/Users/adult/Desktop/DAE Lisa/.git/index.lock': No space left on device
+Adult@DAEDMAC01 DAE Lisa % git status
+git: error: couldn't create cache file '/var/folders/rv/3d0gschd6fnd1c8dqpmjsvc40000gs/T/xcrun_db-5vLH7Lug' (errno=No space left on device)
+git configit: error: couldn't create cache file '/var/folders/rv/3d0gschd6fnd1c8dqpmjsvc40000gs/T/xcrun_db-joKz39Js' (errno=No space left on device)
+^R
+git conOn branch main
+nothing to commit, working tree clean
+Adult@DAEDMAC01 DAE Lisa % git config --global user.name "lisah246"
+git: error: couldn't create cache file '/var/folders/rv/3d0gschd6fnd1c8dqpmjsvc40000gs/T/xcrun_db-HWlITwju' (errno=No space left on device)
+git: error: couldn't create cache file '/var/folders/rv/3d0gschd6fnd1c8dqpmjsvc40000gs/T/xcrun_db-5E1L2U3E' (errno=No space left on device)
+error: could not lock config file /Users/adult/.gitconfig: No space left on device
+Adult@DAEDMAC01 DAE Lisa % git add .
+git: error: couldn't create cache file '/var/folders/rv/3d0gschd6fnd1c8dqpmjsvc40000gs/T/xcrun_db-MXcnHZ7l' (errno=No space left on device)
+git: error: couldn't create cache file '/var/folders/rv/3d0gschd6fnd1c8dqpmjsvc40000gs/T/xcrun_db-v8o5VxNa' (errno=No space left on device)
+fatal: Unable to create '/Users/adult/Desktop/DAE Lisa/.git/index.lock': No space left on device
+Adult@DAEDMAC01 DAE Lisa % git add .
+Adult@DAEDMAC01 DAE Lisa % git commit -m "Drafted logic, algorithm, and schedule plan for July Semester Project"
+[main b39ebcb] Drafted logic, algorithm, and schedule plan for July Semester Project
+ 5 files changed, 234 insertions(+)
+ create mode 100755 Lisa July Python Project.key
+ create mode 100644 logic_1/July Python Project.jam
+ create mode 100644 python_1/July14AdventureDetailed.py
+ create mode 100644 python_1/July14AdventureGame.py
+Adult@DAEDMAC01 DAE Lisa % git push --all
+To https://github.com/lisah246/DAE-Folder.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/lisah246/DAE-Folder.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Adult@DAEDMAC01 DAE Lisa % git pull origin main
+
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.67 KiB | 285.00 KiB/s, done.
+From https://github.com/lisah246/DAE-Folder
+ * branch            main       -> FETCH_HEAD
+   3b8d902..b6fed19  main       -> origin/main
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+Adult@DAEDMAC01 DAE Lisa % git pull --no-rebase origin main
+
+From https://github.com/lisah246/DAE-Folder
+ * branch            main       -> FETCH_HEAD
+hint: Waiting for your editor to close the file... 
+zsh: suspended  git pull --no-rebase origin main
+Adult@DAEDMAC01 DAE Lisa % git config pull.rebase false
+Adult@DAEDMAC01 DAE Lisa % git pull
+error: You have not concluded your merge (MERGE_HEAD exists).
+hint: Please, commit your changes before merging.
+fatal: Exiting because of unfinished merge.
+Adult@DAEDMAC01 DAE Lisa % git pull --rebase origin main
+
+error: You have not concluded your merge (MERGE_HEAD exists).
+hint: Please, commit your changes before merging.
+fatal: Exiting because of unfinished merge.
+Adult@DAEDMAC01 DAE Lisa % git push origin main
+
+To https://github.com/lisah246/DAE-Folder.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/lisah246/DAE-Folder.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Adult@DAEDMAC01 DAE Lisa % fg
+
+[1]  + continued  git pull --no-rebase origin main
+Merge made by the 'ort' strategy.
+Adult@DAEDMAC01 DAE Lisa % git add .
+Adult@DAEDMAC01 DAE Lisa % git commit -m "Drafted logic, algorithm, and schedule plan for July Semester Project"
+[main 338d2d9] Drafted logic, algorithm, and schedule plan for July Semester Project
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+Adult@DAEDMAC01 DAE Lisa % git push origin main
+
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 2.19 MiB | 5.63 MiB/s, done.
+Total 16 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/lisah246/DAE-Folder.git
+   b6fed19..338d2d9  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add .
+Adult@DAEDMAC01 DAE Lisa % git commit -m "Drafted logic, algorithm, and schedule plan for July Semester Project"
+[main 9f6921d] Drafted logic, algorithm, and schedule plan for July Semester Project
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100755 unix_1/Lisa July Python Project.key
+Adult@DAEDMAC01 DAE Lisa % git push --all      
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 747 bytes | 747.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/lisah246/DAE-Folder.git
+   338d2d9..9f6921d  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -, "Update July Project Figjam logic for algorithm and flowchart." && git push --all
+error: unknown switch `,'
+usage: git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]
+                  [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>)]
+                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
+                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
+                  [--date=<date>] [--cleanup=<mode>] [--[no-]status]
+                  [-i | -o] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+                  [(--trailer <token>[(=|:)<value>])...] [-S[<keyid>]]
+                  [--] [<pathspec>...]
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+Adult@DAEDMAC01 DAE Lisa % git add .
+Adult@DAEDMAC01 DAE Lisa % git commit -m "Updated July Project Figjam for Algorithm and Flowchart."
+[main 63b10b0] Updated July Project Figjam for Algorithm and Flowchart.
+ 9 files changed, 842 insertions(+), 218 deletions(-)
+ rename Lisa July Python Project.key => Lisa Weekly Notes.key (93%)
+ create mode 100644 README.md
+ create mode 100644 python_1/.DS_Store
+ delete mode 100644 python_1/July14AdventureDetailed.py
+ create mode 100644 python_2/July14AdventureGame.py
+ create mode 100644 unix_2/July14AdventureGame.py
+Adult@DAEDMAC01 DAE Lisa % git push --all
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1014.54 KiB | 19.51 MiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/lisah246/DAE-Folder.git
+   9f6921d..63b10b0  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add .
+Adult@DAEDMAC01 DAE Lisa % git commit -m "Update July Project Figjam Flowchart"
+[main 15b975b] Update July Project Figjam Flowchart
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+Adult@DAEDMAC01 DAE Lisa % git push --all
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.48 MiB | 2.93 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/lisah246/DAE-Folder.git
+   63b10b0..15b975b  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -m "New Figjam 2" && git push --all
+[main f466266] New Figjam 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 logic_1/Figjam draft 2.jam
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 41.23 KiB | 41.23 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/lisah246/DAE-Folder.git
+   15b975b..f466266  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -m "Created New Figjam for July Semester Project with Algorithm and updated Flowchart2" && git push --all 
+fatal: Unable to create '/Users/adult/Desktop/DAE Lisa/.git/index.lock': No space left on device
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -m "Created New Figjam for July Semester Project with Algorithm and updated Flowchart2" && git push --all
+[main 0ede32e] Created New Figjam for July Semester Project with Algorithm and updated Flowchart2
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 logic_1/July 17 Semester Project Algorithm & Flowchart.jam
+ create mode 100644 logic_1/July Semester Project Draft.jam
+ rename logic_1/{Mini Project Task Tracker (2).jam => Mini Project Task Tracker.jam} (100%)
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 3.58 MiB | 7.56 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lisah246/DAE-Folder.git
+   f466266..0ede32e  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -m "Created New Figjam for July Semester Project with Algorithm and updated Flowchart and updated README.md file" && git push --all
+[main 5b9b022] Created New Figjam for July Semester Project with Algorithm and updated Flowchart and updated README.md file
+ 1 file changed, 42 insertions(+)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.26 KiB | 1.26 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lisah246/DAE-Folder.git
+   0ede32e..5b9b022  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -m "Created New Figjam for July Semester Project with Algorithm and updated Flowchart and updated README.md file, added Token Count PDF for Prompt Engineering" && git push --all
+[main fcd4f36] Created New Figjam for July Semester Project with Algorithm and updated Flowchart and updated README.md file, added Token Count PDF for Prompt Engineering
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 logic_1/Semester 1_Token_Count_Estimate.pdf
+ create mode 100644 prompt_engineering_1/Token_Count_Estimate.pdf
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.04 KiB | 2.04 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/lisah246/DAE-Folder.git
+   5b9b022..fcd4f36  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -m "Update Python logic to include 3 variables with distinct data elements" && git push --all 
+[main 71d5261] Update Python logic to include 3 variables with distinct data elements
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename python_1/{July14AdventureGame.py => July21AdventureGame.py} (100%)
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 412 bytes | 412.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/lisah246/DAE-Folder.git
+   fcd4f36..71d5261  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -m "Updated Python logic to include exception handling and updated prompt engineering folder with AI Chat History" && git push --all
+[main e6ec743] Updated Python logic to include exception handling and updated prompt engineering folder with AI Chat History
+ 6 files changed, 464 insertions(+)
+ create mode 100644 prompt_engineering_1/.DS_Store
+ create mode 100644 prompt_engineering_1/DAE Prompt Engineering.docx
+ create mode 100644 python_1/July22AdventureGame.py
+ create mode 100644 python_2/July22AdventureGame.py
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 9.78 KiB | 9.78 MiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/lisah246/DAE-Folder.git
+   71d5261..e6ec743  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -m "Updated Python logic to include function for saving game to file and to include AI chat history" && git push --all 
+[main ea1d35a] Updated Python logic to include function for saving game to file and to include AI chat history
+ 10 files changed, 983 insertions(+)
+ create mode 100644 July23.py
+ rename prompt_engineering_1/{DAE Prompt Engineering.docx => ChatGPT_Link.docx} (100%)
+ create mode 100644 prompt_engineering_1/DAE Prompt Engineering History.pdf
+ create mode 100644 python_1/July23_SpookyForestGame.py
+ create mode 100644 python_2/July23_SpookyForestGame.py
+ create mode 100644 unix_1/July22AdventureGame.py
+ create mode 100644 unix_2/July22AdventureGame.py
+ create mode 100644 version_control_1/July22AdventureGame.py
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 12.31 MiB | 4.68 MiB/s, done.
+Total 13 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 4 local objects.
+To https://github.com/lisah246/DAE-Folder.git
+   e6ec743..ea1d35a  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -m "Added AI generated image to prompt engineering." && git push --all
+[main 6614c16] Added AI generated image to prompt engineering.
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 prompt_engineering_1/Escape the Spooky Forest.png
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 2.52 MiB | 5.73 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/lisah246/DAE-Folder.git
+   ea1d35a..6614c16  main -> main
+Adult@DAEDMAC01 DAE Lisa % git add . && git commit -m "Updated Python code for file read/write, updated prompt engineering to generate images(3)." && git push --all 
+[main d9069c3] Updated Python code for file read/write, updated prompt engineering to generate images(3).
+ 15 files changed, 729 insertions(+)
+ create mode 100644 prompt_engineering_1/ChatGPT Image 3 Jul 24, 2025, 12_35_41 PM.png
+ create mode 100644 prompt_engineering_1/ChatGPT Image Jul 24, 2025, 12_08_24 PM.png
+ rename prompt_engineering_1/{Escape the Spooky Forest.png => ChatGPT_image2.png} (100%)
+ rename prompt_engineering_1/{DAE Prompt Engineering History.pdf => July23_DAE Prompt Engineering History.pdf} (100%)
+ create mode 100644 prompt_engineering_1/July24_DAE Prompt Engineering_images.docx
+ create mode 100644 prompt_engineering_1/game_results.txt
+ rename July23.py => python_1/July23.py (100%)
+ create mode 100644 python_1/July24Code.py
+ create mode 100644 python_2/July24Code.py
+ create mode 100644 save_file.txt
+ create mode 100644 savegame.json
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (16/16), 17.54 MiB | 2.96 MiB/s, done.
+Total 16 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 6 local objects.
+To https://github.com/lisah246/DAE-Folder.git
+   6614c16..d9069c3  main -> main
+Adult@DAEDMAC01 DAE Lisa % 
