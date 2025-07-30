@@ -1,0 +1,241 @@
+Last login: Wed Jul 30 11:23:52 on ttys077
+Adult@DAEDMAC01 ~ % pwd
+/Users/adult
+Adult@DAEDMAC01 ~ % ls
+A. Dolberry		Movies			my_practice
+Applications		Music			save_file.txt
+Desktop			Pictures		savegame.json
+Documents		Public			task_log.txt
+Downloads		Sites			unix_practice
+Library			game_results.txt
+Adult@DAEDMAC01 ~ % ls =l
+zsh: l not found
+Adult@DAEDMAC01 ~ % ls -l
+total 32
+drwxr-xr-x  12 Adult  staff   384 Feb 27  2024 A. Dolberry
+drwx------@  5 Adult  staff   160 Jun  3 15:39 Applications
+drwx------@ 40 Adult  staff  1280 Jul 30 11:48 Desktop
+drwx------@  7 Adult  staff   224 Apr 16 12:53 Documents
+drwx------@ 72 Adult  staff  2304 Jul 24 14:42 Downloads
+drwx------@ 93 Adult  staff  2976 Jun  3 15:39 Library
+drwx------   5 Adult  staff   160 Sep  5  2024 Movies
+drwx------+  4 Adult  staff   128 Nov  1  2023 Music
+drwx------+  5 Adult  staff   160 Apr 29 15:34 Pictures
+drwxr-xr-x+  4 Adult  staff   128 Oct 19  2023 Public
+drwx------   3 Adult  staff    96 Apr 14 13:10 Sites
+-rw-r--r--   1 Adult  staff   422 Jul 29 12:28 game_results.txt
+drwxr-xr-x   3 Adult  staff    96 Jul 28 14:03 my_practice
+-rw-r--r--   1 Adult  staff    47 Jul 29 13:45 save_file.txt
+-rw-r--r--   1 Adult  staff  1599 Jul 29 12:18 savegame.json
+-rw-r--r--@  1 Adult  staff  1319 Jul 10 13:03 task_log.txt
+drwxr-xr-x   3 Adult  staff    96 Jul 28 12:49 unix_practice
+Adult@DAEDMAC01 ~ % ls -a
+.			.viminfo		Music
+..			.vscode			Pictures
+.CFUserTextEncoding	.zsh_history		Public
+.DS_Store		.zsh_sessions		Sites
+.Trash			A. Dolberry		game_results.txt
+.bash_history		Applications		my_practice
+.docker			Desktop			save_file.txt
+.gitconfig		Documents		savegame.json
+.lesshst		Downloads		task_log.txt
+.localized		Library			unix_practice
+.npm			Movies
+Adult@DAEDMAC01 ~ % cat filename.txt
+cat: filename.txt: No such file or directory
+Adult@DAEDMAC01 ~ % cat task_log.txt
+Task: Task
+Started: Wed Jul  9 13:36:34 2025
+Ended:   Wed Jul  9 13:37:05 2025
+Duration: 0:00:23
+----------------------------------------
+Task: Task 2
+Started: Wed Jul  9 13:37:33 2025
+Ended:   Wed Jul  9 13:37:41 2025
+Duration: 0:00:05
+----------------------------------------
+Task: Blue
+Started: Wed Jul  9 13:52:04 2025
+Ended:   Wed Jul  9 13:52:16 2025
+Duration: 0:00:09
+----------------------------------------
+Task: edf
+Started: Wed Jul  9 14:00:29 2025
+Ended:   Wed Jul  9 14:01:12 2025
+Duration: 0:00:43
+----------------------------------------
+Task: t
+Started: Thu Jul 10 12:16:53 2025
+Ended:   Thu Jul 10 12:17:06 2025
+Duration: 0:00:07
+----------------------------------------
+Task: y
+Started: Thu Jul 10 12:17:22 2025
+Ended:   Thu Jul 10 12:17:25 2025
+Duration: 0:00:03
+----------------------------------------
+
+🧮 Total Time Tracked: 0:00:10
+========================================
+Task: t
+Started: Thu Jul 10 12:32:43 2025
+Ended:   Thu Jul 10 12:32:45 2025
+Duration: 0:00:02
+----------------------------------------
+
+🧮 Total Time Tracked: 0:00:02
+========================================
+Task: li
+Started: Thu Jul 10 13:03:02 2025
+Ended:   Thu Jul 10 13:03:05 2025
+Duration: 0:00:03
+----------------------------------------
+
+🧮 Total Time Tracked: 0:00:03
+========================================
+Adult@DAEDMAC01 ~ % touch my_first_file.txt
+Adult@DAEDMAC01 ~ % touch file1.txt file2.txt file3.txt
+Adult@DAEDMAC01 ~ % nano my_story.txt
+Adult@DAEDMAC01 ~ % ls -l my_story.txt
+-rw-r--r--  1 Adult  staff  29 Jul 30 11:57 my_story.txt
+Adult@DAEDMAC01 ~ % chmod 755 my_story.txt
+Adult@DAEDMAC01 ~ % mkdir my_new_folder
+Adult@DAEDMAC01 ~ % mkdir folder1 folder2 folder3
+Adult@DAEDMAC01 ~ % cp my_story.txt my_story_copy.txt
+Adult@DAEDMAC01 ~ % mv my_story.txt moved_story.txt
+Adult@DAEDMAC01 ~ % mv moved_story.txt my_new_folder/
+Adult@DAEDMAC01 ~ % less big_file.txt
+big_file.txt: No such file or directory
+Adult@DAEDMAC01 ~ % less big_file.txt 
+big_file.txt: No such file or directory
+Adult@DAEDMAC01 ~ % less my_first_file.txt
+Adult@DAEDMAC01 ~ % rm old_file.txt
+rm: old_file.txt: No such file or directory
+Adult@DAEDMAC01 ~ % rm my_story_copy.txt
+Adult@DAEDMAC01 ~ % echo $SHELL
+/bin/zsh
+Adult@DAEDMAC01 ~ % bash
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ zsh
+Adult@DAEDMAC01 ~ % exit
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+bash-3.2$ alias ll='ls -l'
+bash-3.2$ ll
+total 32
+drwxr-xr-x  12 Adult  staff   384 Feb 27  2024 A. Dolberry
+drwx------@  5 Adult  staff   160 Jun  3 15:39 Applications
+drwx------@ 40 Adult  staff  1280 Jul 30 11:48 Desktop
+drwx------@  7 Adult  staff   224 Apr 16 12:53 Documents
+drwx------@ 72 Adult  staff  2304 Jul 24 14:42 Downloads
+drwx------@ 93 Adult  staff  2976 Jun  3 15:39 Library
+drwx------   5 Adult  staff   160 Sep  5  2024 Movies
+drwx------+  4 Adult  staff   128 Nov  1  2023 Music
+drwx------+  5 Adult  staff   160 Apr 29 15:34 Pictures
+drwxr-xr-x+  4 Adult  staff   128 Oct 19  2023 Public
+drwx------   3 Adult  staff    96 Apr 14 13:10 Sites
+-rw-r--r--   1 Adult  staff     0 Jul 30 11:56 file1.txt
+-rw-r--r--   1 Adult  staff     0 Jul 30 11:56 file2.txt
+-rw-r--r--   1 Adult  staff     0 Jul 30 11:56 file3.txt
+drwxr-xr-x   2 Adult  staff    64 Jul 30 11:59 folder1
+drwxr-xr-x   2 Adult  staff    64 Jul 30 11:59 folder2
+drwxr-xr-x   2 Adult  staff    64 Jul 30 11:59 folder3
+-rw-r--r--   1 Adult  staff   422 Jul 29 12:28 game_results.txt
+-rw-r--r--   1 Adult  staff     0 Jul 30 11:56 my_first_file.txt
+drwxr-xr-x   3 Adult  staff    96 Jul 30 12:00 my_new_folder
+drwxr-xr-x   3 Adult  staff    96 Jul 28 14:03 my_practice
+-rw-r--r--   1 Adult  staff    47 Jul 29 13:45 save_file.txt
+-rw-r--r--   1 Adult  staff  1599 Jul 29 12:18 savegame.json
+-rw-r--r--@  1 Adult  staff  1319 Jul 10 13:03 task_log.txt
+drwxr-xr-x   3 Adult  staff    96 Jul 28 12:49 unix_practice
+bash-3.2$ alias myfiles='ls -la'
+bash-3.2$ myfiles
+total 152
+drwxr-x---+ 40 Adult  staff   1280 Jul 30 12:03 .
+drwxr-xr-x   8 root   admin    256 Aug 26  2024 ..
+-r--------   1 Adult  staff      7 Oct 31  2023 .CFUserTextEncoding
+-rw-r--r--@  1 Adult  staff  12292 Jul 30 11:23 .DS_Store
+drwx------+ 20 Adult  staff    640 Jul 28 14:39 .Trash
+-rw-------   1 Adult  staff    298 Jul 30 11:47 .bash_history
+drwxr-xr-x@ 12 Adult  staff    384 Apr 23 15:26 .docker
+-rw-r--r--   1 Adult  staff     52 Jul 10 13:58 .gitconfig
+-rw-------   1 Adult  staff     20 Jul 30 12:01 .lesshst
+-rw-r--r--   1 Adult  staff      0 Oct 19  2023 .localized
+drwxr-xr-x   6 Adult  staff    192 May 27 16:10 .npm
+-rw-------   1 Adult  staff    921 Jul 14 14:42 .viminfo
+drwxr-xr-x   5 Adult  staff    160 Nov  8  2023 .vscode
+-rw-------   1 Adult  staff  23889 Jul 30 12:03 .zsh_history
+drwx------   9 Adult  staff    288 Jul 30 12:03 .zsh_sessions
+drwxr-xr-x  12 Adult  staff    384 Feb 27  2024 A. Dolberry
+drwx------@  5 Adult  staff    160 Jun  3 15:39 Applications
+drwx------@ 40 Adult  staff   1280 Jul 30 11:48 Desktop
+drwx------@  7 Adult  staff    224 Apr 16 12:53 Documents
+drwx------@ 72 Adult  staff   2304 Jul 24 14:42 Downloads
+drwx------@ 93 Adult  staff   2976 Jun  3 15:39 Library
+drwx------   5 Adult  staff    160 Sep  5  2024 Movies
+drwx------+  4 Adult  staff    128 Nov  1  2023 Music
+drwx------+  5 Adult  staff    160 Apr 29 15:34 Pictures
+drwxr-xr-x+  4 Adult  staff    128 Oct 19  2023 Public
+drwx------   3 Adult  staff     96 Apr 14 13:10 Sites
+-rw-r--r--   1 Adult  staff      0 Jul 30 11:56 file1.txt
+-rw-r--r--   1 Adult  staff      0 Jul 30 11:56 file2.txt
+-rw-r--r--   1 Adult  staff      0 Jul 30 11:56 file3.txt
+drwxr-xr-x   2 Adult  staff     64 Jul 30 11:59 folder1
+drwxr-xr-x   2 Adult  staff     64 Jul 30 11:59 folder2
+drwxr-xr-x   2 Adult  staff     64 Jul 30 11:59 folder3
+-rw-r--r--   1 Adult  staff    422 Jul 29 12:28 game_results.txt
+-rw-r--r--   1 Adult  staff      0 Jul 30 11:56 my_first_file.txt
+drwxr-xr-x   3 Adult  staff     96 Jul 30 12:00 my_new_folder
+drwxr-xr-x   3 Adult  staff     96 Jul 28 14:03 my_practice
+-rw-r--r--   1 Adult  staff     47 Jul 29 13:45 save_file.txt
+-rw-r--r--   1 Adult  staff   1599 Jul 29 12:18 savegame.json
+-rw-r--r--@  1 Adult  staff   1319 Jul 10 13:03 task_log.txt
+drwxr-xr-x   3 Adult  staff     96 Jul 28 12:49 unix_practice
+bash-3.2$ PS1="🌟 \u@\h:\w$ "
+🌟 Adult@DAEDMAC01:~$ PS1="\[\033[1;32m\]\u@\h\[\033[0m\]:\[\033[1;34m\]\w\[\033[0m\]$ "
+Adult@DAEDMAC01:~$ pwd
+/Users/adult
+Adult@DAEDMAC01:~$ ls
+A. Dolberry		Public			my_first_file.txt
+Applications		Sites			my_new_folder
+Desktop			file1.txt		my_practice
+Documents		file2.txt		save_file.txt
+Downloads		file3.txt		savegame.json
+Library			folder1			task_log.txt
+Movies			folder2			unix_practice
+Music			folder3
+Pictures		game_results.txt
+Adult@DAEDMAC01:~$ touch practice.txt
+Adult@DAEDMAC01:~$ nano practice.txt
+Adult@DAEDMAC01:~$ cat practice.txt
+I'm learning Unix!
+Adult@DAEDMAC01:~$ ls =l practice.txt
+ls: =l: No such file or directory
+practice.txt
+Adult@DAEDMAC01:~$ ls -l practice.txt
+-rw-r--r--  1 Adult  staff  19 Jul 30 12:06 practice.txt
+Adult@DAEDMAC01:~$ mkdir unix_practice
+mkdir: unix_practice: File exists
+Adult@DAEDMAC01:~$ cp practice.txt unix_practice/
+Adult@DAEDMAC01:~$ ls unix_practice
+practice.txt	unix_practice
+Adult@DAEDMAC01:~$ cd unix_practice
+Adult@DAEDMAC01:~/unix_practice$ pwd
+/Users/adult/unix_practice
+Adult@DAEDMAC01:~/unix_practice$ touch file1.txt file2.txt file3.txt
+Adult@DAEDMAC01:~/unix_practice$ mkdir backup
+Adult@DAEDMAC01:~/unix_practice$ cp file1.txt file2.txt file3.txt backup/
+Adult@DAEDMAC01:~/unix_practice$ ls -la backup/
+total 0
+drwxr-xr-x  5 Adult  staff  160 Jul 30 12:08 .
+drwxr-xr-x  8 Adult  staff  256 Jul 30 12:08 ..
+-rw-r--r--  1 Adult  staff    0 Jul 30 12:08 file1.txt
+-rw-r--r--  1 Adult  staff    0 Jul 30 12:08 file2.txt
+-rw-r--r--  1 Adult  staff    0 Jul 30 12:08 file3.txt
+Adult@DAEDMAC01:~/unix_practice$ 

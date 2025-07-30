@@ -1,3 +1,6 @@
+# Lisa's Python Project: Adventure Game
+# Background: Introductory game for kids to learn math, technology, and basic reasoning skills.
+
 import random
 import sys
 import json
@@ -61,11 +64,13 @@ rooms = {
 current_room = "Clearing"   # Player's current location
 inventory = []              # Items player has collected
 life_points = 0             # Player's life points
+max_life_points = 12        # Maximum possible life points
 mission_items = {"flashlight", "map", "compass", "fire kit"}  # Correct items to find
 
 # Completed rooms variables
 completed_rooms = set()  # Tracks rooms player has fully completed
 
+player_name = "You"  # Default name if none entered
 
 # -----------------------------
 # Quiz Data (by categories)
@@ -117,7 +122,12 @@ def intro():
     Displays the game introduction and prompts the player to start or quit.
     Exits the game if the player does not want to proceed.
     """
-    print("\n🧚‍♀️ Fairy: Welcome, brave child! You must collect four items to survive and escape.")
+    global player_name
+    player_name = input("Enter your name, brave adventurer: ").strip()
+    if not player_name:
+        player_name = "You"  # fallback if empty
+
+    print("\n🧚‍♀️ Fairy: Welcome, brave child! You must collect 4 key items to survive and escape.")
     print("The right items give +1 life point, the wrong ones lose -1 point.")
     print("Your skills in math, tech, budgeting, project management, and cybersecurity will be tested.")
     choice = input("Do you wish to proceed? (yes/no): ").strip().lower()
@@ -228,7 +238,6 @@ def take_item(item):
     if life_points < 0:
         game_over()
 
-    check_end()  # Check if mission completed
     return True
 
 def check_end():
@@ -239,7 +248,7 @@ def check_end():
     collected = set(i.lower() for i in inventory)
     if mission_items.issubset(collected):
         print("\n🎉 You collected all correct items and escape the forest!")
-        print(f"❤️ Final life points: {life_points}")
+        print(f"❤️ Final life points: {life_points}/{max_life_points}")
         show_summary()
         show_leaderboard()
         save_results_to_file()
@@ -251,7 +260,7 @@ def game_over():
     Shows final score summary, leaderboard, and saves results to file.
     """
     print("\n💀 Your life points fell below zero. The wizard captures you forever!")
-    print(f"❤️ Final life points: {life_points}")
+    print(f"❤️ Final life points: {life_points}/{max_life_points}")
     show_summary()
     show_leaderboard()
     save_results_to_file()
@@ -275,7 +284,7 @@ def show_leaderboard():
         {"name": "Aria", "points": 10},
         {"name": "Zane", "points": 8},
         {"name": "Liam", "points": 7},
-        {"name": "You", "points": life_points},
+        {"name": player_name, "points": life_points},
         {"name": "Maya", "points": 3}
     ]
     sorted_data = sorted(fake_data, key=lambda x: x["points"], reverse=True)
@@ -303,7 +312,7 @@ def save_results_to_file():
                 {"name": "Aria", "points": 10},
                 {"name": "Zane", "points": 8},
                 {"name": "Liam", "points": 7},
-                {"name": "You", "points": life_points},
+                {"name": player_name, "points": life_points},
                 {"name": "Maya", "points": 3}
             ]
             sorted_data = sorted(fake_data, key=lambda x: x["points"], reverse=True)
@@ -376,8 +385,8 @@ def main():
     while True:
         # Show current location and player stats
         print(f"\nYou are in the {current_room}.")
-        print(f"Inventory: {', '.join(inventory) if inventory else 'Empty'} | ❤️ Life points: {life_points}")
-        print("Options: north, south, east, west, inventory, points, save, load, quit")
+        print(f"Inventory: {', '.join(inventory) if inventory else 'Empty'} | ❤️ Life points: {life_points}/{max_life_points}")
+        print("Game Options: north, south, east, west, inventory, points, save, load, quit")
 
         command = input("> ").strip().lower()
 
@@ -438,8 +447,16 @@ def main():
                     print("No more items here. Go elsewhere.")
                     break
 
-                print(f"Items in this room: {', '.join(rooms[current_room]['items'])}")
-                print("Pick an item or type 'leave' to exit.")
+                items = rooms[current_room]["items"]
+                if not items:
+                    print("No more items here. Go elsewhere.")
+                    break
+
+                print("Items in this room:")
+                for i, item in enumerate(items, 1):
+                    print(f"{i}. {item}")
+                print("Choose an item number or type 'leave' to exit.")
+
                 choice = input("> ").strip().lower()
 
                 if choice == "leave":
@@ -447,13 +464,18 @@ def main():
                     print("✨ You return to the clearing.")
                     current_room = "Clearing"
                     break
-                else:
-                    if take_item(choice):
+                elif choice.isdigit() and 1 <= int(choice) <= len(items):
+                    selected_item = items[int(choice) - 1]
+                    if take_item(selected_item):
                         handle_hazard()
-                        completed_rooms.add(current_room)  # Mark room as completed here
+                        check_end() 
+                        completed_rooms.add(current_room)
                         print("✨ You return to the clearing.")
                         current_room = "Clearing"
                         break
+                else:
+                    print("❌ That is not an option, try again.")
+
         else:
             print("❓ Invalid command.")
 
