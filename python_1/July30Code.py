@@ -1,6 +1,13 @@
 # Lisa's Python Project: Adventure Game
 # Background: Introductory game for kids to learn math, technology, and basic reasoning skills.
 
+import pygame
+
+import tkinter as tk
+from tkinter import messagebox
+from PIL import Image, ImageTk
+
+
 import random
 import sys
 import json
@@ -83,7 +90,7 @@ quizzes = [
     {"category": "Budgeting", "question": "You buy software for $120 and get a $20 discount. What do you pay?", "choices": ["$100", "$110", "$120"], "answer": "$100"},
     {"category": "Budgeting", "question": "If you save $15 per week, how much after 4 weeks?", "choices": ["$45", "$60", "$75"], "answer": "$60"},
     {"category": "Project Management", "question": "A project has 10 tasks, 7 done. What percent complete?", "choices": ["70%", "50%", "80%"], "answer": "70%"},
-    {"category": "Project Management", "question": "You're managing a small project task that will take 5 hours total. You plan to work 2 hours per day on it. How many days will it take you to finish?", "choices": ["2.5", "3", "5"], "answer": "3"},
+    {"category": "Project Management", "question": "You're managing a small project task that will take 5 hours total. You plan to work 2 hours per day on it. How many days will it take you to finish?", "choices": ["2.5", "3", "5"], "answer": "2.5"},
     {"category": "Tech", "question": "What does CPU stand for?", "choices": ["Central Processing Unit", "Computer Power Unit", "Central Power Utility"], "answer": "Central Processing Unit"},
     {"category": "Tech", "question": "Which is a strong password?", "choices": ["password123", "Qx!7&zLw", "john2022"], "answer": "Qx!7&zLw"},
     {"category": "Cybersecurity", "question": "What is phishing?", "choices": ["Fishing online", "A scam to steal data", "A virus"], "answer": "A scam to steal data"},
@@ -95,12 +102,46 @@ quizzes = [
 # -----------------------------
 
 # List of hazards the player must respond to, with choices and correct answers
+
 hazards = [
-    {"scenario": "Dragon blocks path! What do you do?", "choices": ["Dive into river", "Throw rocks"], "answer": "Dive into river"},
-    {"scenario": "Swarm of bees! What do you do?", "choices": ["Cover in mud", "Wave arms"], "answer": "Cover in mud"},
-    {"scenario": "Landslide starts! What do you do?", "choices": ["Climb up", "Stay put"], "answer": "Climb up"},
-    {"scenario": "Deep fog surrounds you. What do you do?", "choices": ["Stay still", "Run blindly"], "answer": "Stay still"},
+    {
+        "scenario": "Dragon blocks path! What do you do?",
+        "choices": ["Dive into river", "Throw rocks"],
+        "answer": "Dive into river",
+        "explanations": {
+            "Dive into river": "You escape just in time — the dragon hates water!",
+            "Throw rocks": "You threw rocks at the dragon... it got mad and roasted your eyebrows. 🔥"
+        }
+    },
+    {
+        "scenario": "Swarm of bees! What do you do?",
+        "choices": ["Cover in mud", "Wave arms"],
+        "answer": "Cover in mud",
+        "explanations": {
+            "Cover in mud": "The bees can't smell you through the mud. Nice!",
+            "Wave arms": "You flailed around and made them angrier — now you're full of stings! 🐝"
+        }
+    },
+    {
+        "scenario": "Landslide starts! What do you do?",
+        "choices": ["Climb up", "Stay put"],
+        "answer": "Climb up",
+        "explanations": {
+            "Climb up": "You reach higher ground just in time!",
+            "Stay put": "You stood still and got buried in dirt... not the smartest move. 🪨"
+        }
+    },
+    {
+        "scenario": "Deep fog surrounds you. What do you do?",
+        "choices": ["Stay still", "Run blindly"],
+        "answer": "Stay still",
+        "explanations": {
+            "Stay still": "Smart move — you waited until the fog cleared!",
+            "Run blindly": "You ran straight into a tree. Now you have a bump the size of an acorn. 🌳"
+        }
+    }
 ]
+
 
 # Score tracker by category
 score_breakdown = {
@@ -118,16 +159,56 @@ score_breakdown = {
 # -----------------------------
 
 def intro():
-    """
-    Displays the game introduction and prompts the player to start or quit.
-    Exits the game if the player does not want to proceed.
-    """
-    global player_name
-    player_name = input("Enter your name, brave adventurer: ").strip()
-    if not player_name:
-        player_name = "You"  # fallback if empty
 
-    print("\n🧚‍♀️ Fairy: Welcome, brave child! You must collect 4 key items to survive and escape.")
+    global player_name
+
+    # Initialize pygame mixer and play music
+    pygame.mixer.init()
+    try:
+        pygame.mixer.music.load("/Users/adult/Desktop/DAE Lisa/python_1/intro_theme.mp3")
+        pygame.mixer.music.play(-1)  # Loop indefinitely
+    except Exception as e:
+        print(f"⚠️ Could not load music: {e}")
+
+    def start_game():
+        global player_name
+        name = name_entry.get().strip()
+        if not name:
+            messagebox.showwarning("Missing Name", "Please enter your name to begin.")
+            return
+        player_name = name
+        pygame.mixer.music.stop()  # Stop music once game starts
+        root.destroy()  # Close the GUI window
+
+    # Create the Tkinter window
+    root = tk.Tk()
+    root.title("Spooky Forest Adventure")
+
+    # Load and display the image
+    try:
+        img_original = Image.open("/Users/adult/Desktop/DAE Lisa/python_1/forest_intro.png")
+        img_resized = img_original.resize((300, 300))  # Resize PIL Image
+        img = ImageTk.PhotoImage(img_resized)          # Convert to PhotoImage for tkinter
+    
+        image_label = tk.Label(root, image=img)
+        image_label.image = img  # Keep a reference!
+        image_label.pack(pady=10)
+    except Exception as e:
+        print(f"⚠️ Could not load image: {e}")
+
+    # UI elements
+    tk.Label(root, text="Enter your name, brave adventurer:", font=("Arial", 14)).pack(pady=10)
+    name_entry = tk.Entry(root, font=("Arial", 14))
+    name_entry.pack(pady=5)
+
+    start_button = tk.Button(root, text="Start Game", font=("Arial", 14), command=start_game)
+    start_button.pack(pady=20)
+
+    # Launch the window
+    root.mainloop()
+
+    # Back to console after GUI closes
+    print(f"\n🧚‍♀️ Fairy: Welcome, {player_name}! You must collect 4 key items to survive and escape.")
     print("The right items give +1 life point, the wrong ones lose -1 point.")
     print("Your skills in math, tech, budgeting, project management, and cybersecurity will be tested.")
     choice = input("Do you wish to proceed? (yes/no): ").strip().lower()
@@ -136,6 +217,7 @@ def intro():
         sys.exit()
     else:
         print("✨ Be brave and choose your path!")
+
 
 def ask_quiz():
     """
@@ -200,10 +282,11 @@ def handle_hazard():
         if selected == hazard["answer"]:
             life_points += 1
             score_breakdown["Hazards"] += 1
-            print("✅ Safe choice! +1 life point.")
+            print(f"✅ Safe choice! +1 life point.\n{hazard['explanations'][selected]}")
         else:
             life_points -= 1
-            print("❌ Bad choice! -1 life point.")
+            print(f"❌ Bad choice! -1 life point.\n{hazard['explanations'][selected]}")
+
         break
 
     if life_points < 0:
