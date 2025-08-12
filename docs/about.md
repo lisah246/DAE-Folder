@@ -1,71 +1,60 @@
 ---
-layout: single
 title: "About Me"
 permalink: /about/
-author_profile: true
+layout: single
 ---
 
-<div class="professional-header">
-  <img src="/assets/img/your-headshot.jpg" alt="Your Name" class="rounded-image">
-  <h1>About Me</h1>
+<div style="text-align:center; margin-bottom:2rem;">
+  <img src="{{ '/assets/img/pinky.jpg' | relative_url }}" alt="Alex Rivera" 
+       style="max-width:200px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
 </div>
 
-## Professional Journey
+## My Journey in Cybersecurity
 
-I'm a dedicated cybersecurity professional with a passion for protecting digital assets and building secure systems. My journey in technology began with a fascination for understanding how systems work and how to make them more secure.
+I design secure backend services that help teams ship faster with confidence. Currently pursuing my degree in **Cybersecurity & Backend Development** at DAE, with an expected graduation in **May 2025**.
 
-### Core Interests
+I'm actively seeking a role as a **Security Engineer** in a collaborative, growth-oriented team where I can contribute to building robust defense systems.
 
-<div class="skills-grid">
-  <div class="skill-category">
-    <h3>🛡️ Threat Modeling</h3>
-    <p>Identifying and analyzing potential security threats to design robust defense strategies.</p>
-  </div>
-  
-  <div class="skill-category">
-    <h3>🚨 Incident Response</h3>
-    <p>Rapid response to security incidents with systematic investigation and remediation.</p>
-  </div>
-  
-  <div class="skill-category">
-    <h3>🔐 API Security</h3>
-    <p>Securing application programming interfaces against common vulnerabilities and attacks.</p>
-  </div>
-</div>
+### Core Interests & Expertise
 
-## Technical Skills
+🔍 **Threat Modeling**  
+Analyzing system architectures to identify potential attack vectors and implementing appropriate countermeasures.
 
-### Programming Languages
-- **Python**: Security scripting, automation, data analysis
-- **JavaScript**: Web development, API integration
-- **SQL**: Database queries, security analysis
-- **Bash**: System administration, automation scripts
+🚨 **Incident Response**  
+Developing and executing response procedures for security incidents, from detection through remediation.
 
-### Cloud & Infrastructure
-- **AWS**: EC2, S3, IAM, CloudTrail, Security Groups
-- **Docker**: Containerization, security scanning
-- **Linux**: System administration, security hardening
+🔐 **API Security**  
+Designing secure authentication and authorization systems for modern web applications.
 
-### Security Tools
-- **SIEM**: Splunk, ELK Stack
-- **Vulnerability Scanning**: Nessus, OpenVAS
-- **Network Security**: Wireshark, Nmap
-- **Code Analysis**: SonarQube, Bandit
+### Technical Skills
 
-## Education
+**Programming Languages:**
+- Python (Security automation, data analysis)
+- Go (Backend services, CLI tools)
+- TypeScript (Frontend security implementations)
 
-**Bachelor of Science in Cybersecurity**  
-*Your University* | Expected Graduation: Year
+**Cloud & Infrastructure:**
+- AWS (IAM, CloudTrail, GuardDuty)
+- Azure (Security Center, Sentinel)
+- Docker & Kubernetes (Container security)
+
+**Security Tools:**
+- SIEM platforms (Splunk, ELK Stack)
+- Vulnerability scanners
+- Network analysis tools
+
+### Education & Certifications
+
+**District Arts & Education (DAE)**  
+*Cybersecurity & Backend Development Program*  
+*Expected Graduation: May 2025*
 
 **Relevant Coursework:**
-- Network Security and Cryptography
-- Ethical Hacking and Penetration Testing
-- Digital Forensics and Incident Response
+- Network Security & Penetration Testing
 - Secure Software Development
-- Risk Management and Compliance
+- Digital Forensics & Incident Response
+- Cloud Security Architecture
 
 ---
 
-<div class="enhanced-footer">
-  <p>Proudly associated with <img src="/assets/img/organization-logo.jpg" alt="Organization" class="footer-logo"></p>
-</div>
+*"Security is not a product, but a process. It's about building systems that fail securely and recover gracefully."*

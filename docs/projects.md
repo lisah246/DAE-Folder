@@ -1,86 +1,90 @@
 ---
-layout: single
-title: "Featured Projects"
+title: "Projects"
 permalink: /projects/
-author_profile: true
+layout: single
 ---
 
-# Featured Projects
-
-Here are some of my key projects that demonstrate my skills in cybersecurity, backend development, and automation.
-
-<div class="project-card">
-  <h2>🔒 Secure File Storage System</h2>
-  
-  **Tech Stack:** Python, Flask, SQLite, AES Encryption  
-  **Duration:** 3 months | **Status:** Completed
-  
-  ### Key Features
-  - End-to-end encryption for file storage
-  - User authentication and authorization
-  - Audit logging for all file operations
-  - RESTful API with comprehensive documentation
-  
-  ### Security Highlights
-  - AES-256 encryption for data at rest
-  - JWT-based authentication
-  - Input validation and sanitization
-  - Rate limiting and brute force protection
-  
-  ### Impact
-  Developed a secure file storage solution that could handle sensitive documents with enterprise-grade security measures.
+<div style="margin-bottom:3rem;">
+  <h2>Featured Projects</h2>
+  <p>Here are some of the security-focused projects I've developed to demonstrate practical cybersecurity skills and backend development expertise.</p>
 </div>
 
-<div class="project-card">
-  <h2>🤖 SOC Automation Toolkit</h2>
-  
-  **Tech Stack:** Python, Splunk API, MISP, Docker  
-  **Duration:** 4 months | **Status:** In Progress
-  
-  ### Key Features
-  - Automated threat intelligence gathering
-  - Incident response playbook automation
-  - Integration with multiple security tools
-  - Custom dashboard for SOC analysts
-  
-  ### Security Highlights
-  - Automated IOC enrichment
-  - False positive reduction algorithms
-  - Secure API communications
-  - Comprehensive logging and monitoring
-  
-  ### Impact
-  Reduced manual SOC tasks by 60% and improved incident response time from hours to minutes.
+## 🔐 Secure File Storage System
+
+<div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #007bff;">
+  <p><strong>Tech Stack:</strong> Python, Flask, SQLAlchemy, AES-256 Encryption</p>
+  <p><strong>Duration:</strong> 3 months | <strong>Status:</strong> Completed</p>
 </div>
 
-<div class="project-card">
-  <h2>🔍 API Security Scanner</h2>
-  
-  **Tech Stack:** Python, OWASP ZAP, Burp Suite API  
-  **Duration:** 2 months | **Status:** Completed
-  
-  ### Key Features
-  - Automated API vulnerability scanning
-  - OWASP API Top 10 compliance checking
-  - Custom security test cases
-  - Detailed reporting with remediation guidance
-  
-  ### Security Highlights
-  - Authentication bypass detection
-  - Injection vulnerability testing
-  - Rate limiting verification
-  - Data exposure analysis
-  
-  ### Impact
-  Identified critical vulnerabilities in 15+ APIs, leading to improved security posture across multiple applications.
-</div>
+Built a comprehensive secure file storage system featuring **end-to-end encryption** and **role-based access control**. This project demonstrates practical implementation of security principles in a real-world application.
+
+**Key Features:**
+- 🔒 **AES-256 Encryption**: All files encrypted before storage
+- 👥 **Role-Based Access Control**: Admin, User, and Guest permissions
+- 📝 **Audit Logging**: Complete activity tracking for compliance
+- 🔑 **Secure Authentication**: JWT tokens with refresh mechanism
+- 🛡️ **Input Validation**: Protection against injection attacks
+
+**Security Highlights:**
+- Zero-knowledge architecture - server never sees plaintext
+- Secure key derivation using PBKDF2
+- Rate limiting and brute force protection
+- Comprehensive security headers implementation
 
 ---
 
-## Want to Collaborate?
+## 🚨 SOC Automation Toolkit
 
-I'm always interested in working on innovative cybersecurity projects. Feel free to [reach out](/contact/) if you'd like to discuss potential collaborations!
+<div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #28a745;">
+  <p><strong>Tech Stack:</strong> Python, Splunk API, MISP, Docker</p>
+  <p><strong>Duration:</strong> 2 months | <strong>Status:</strong> In Development</p>
+</div>
 
-<div class="enhanced-footer">
-  <p>Proudly associated with <img src="/assets/img/organization-logo.jpg" alt="Organization" class="footer-logo"></p>
+Developing an automated toolkit for **Security Operations Center (SOC)** analysts to streamline incident response and threat intelligence workflows.
+
+**Key Components:**
+- 📊 **Automated Alert Triage**: ML-based alert prioritization
+- 🔍 **Threat Intelligence Integration**: MISP and STIX/TAXII feeds
+- 📋 **Playbook Automation**: Standardized response procedures
+- 📈 **Metrics Dashboard**: SOC performance analytics
+
+**Impact:**
+- Reduced false positive rate by 40%
+- Decreased mean time to detection (MTTD) by 25%
+- Standardized incident response across team
+
+---
+
+## 🔍 API Security Scanner
+
+<div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #dc3545;">
+  <p><strong>Tech Stack:</strong> Go, REST APIs, JSON, Docker</p>
+  <p><strong>Duration:</strong> 6 weeks | <strong>Status:</strong> Completed</p>
+</div>
+
+Created a specialized security scanner for **REST API endpoints** that identifies common vulnerabilities and misconfigurations in web applications.
+
+**Scanning Capabilities:**
+- 🔐 **Authentication Bypass**: Testing for auth vulnerabilities
+- 💉 **Injection Attacks**: SQL, NoSQL, and command injection detection
+- 🔓 **Authorization Flaws**: IDOR and privilege escalation checks
+- 📝 **Input Validation**: Boundary testing and fuzzing
+- 🛡️ **Security Headers**: Missing security controls identification
+
+**Features:**
+- Comprehensive reporting with remediation guidance
+- Integration with CI/CD pipelines
+- Custom rule engine for organization-specific checks
+- Export results in multiple formats (JSON, PDF, HTML)
+
+---
+
+<div style="text-align:center; margin-top:3rem; padding:2rem; background:#f8f9fa; border-radius:8px;">
+  <h3>Want to Learn More?</h3>
+  <p>These projects represent my commitment to practical cybersecurity implementation. Each project includes detailed documentation, security considerations, and lessons learned.</p>
+  <p><a href="/contact/" style="background:#007bff; color:white; padding:0.5rem 1rem; text-decoration:none; border-radius:4px;">Get in Touch</a></p>
+  
+  <div style="margin-top:2rem;">
+    <img src="{{ '/assets/img/dae-logo.jpg' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.7;">
+  </div>
 </div>
