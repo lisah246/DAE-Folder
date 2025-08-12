@@ -36,7 +36,7 @@ author:
 # =====================
 # BRANDING
 # =====================
-logo: "C:\Users\Lisa\Desktop\DAE-Folder\docs\assets\img\dae.png" # ← Fixed from .avif
+logo: "C:\Users\Lisa\Desktop\DAE-Folder\docs\assets\img\dae_logo.jpg" # ← Fixed from .avif
 
 # =====================
 # PLUGINS (safe + GitHub Pages supported)
