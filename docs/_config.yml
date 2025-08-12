@@ -3,13 +3,13 @@
 # =====================
 title: "Lisa Hom — Backend Developer"
 description: "Portfolio showcasing case studies demonstrating backend development skills."
-url: "https://lisah246.github.io/" # ← Your actual GitHub username
+url: "https://lisah246.github.io" # ← Your actual GitHub username
 baseurl: "/DAE-Folder" # ← Your actual repository name
 
 # =====================
 # THEME (Modern)
 # =====================
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 minimal_mistakes_skin: "default"
 
 # =====================
