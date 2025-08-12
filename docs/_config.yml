@@ -4,7 +4,7 @@
 title: "Lisa Hom — Backend Developer"
 description: "Portfolio showcasing case studies demonstrating backend development skills."
 url: "https://lisah246.github.io/" # ← Your actual GitHub username
-baseurl: "/lisah246/DAE-Folder" # ← Your actual repository name
+baseurl: "/DAE-Folder" # ← Your actual repository name
 
 # =====================
 # THEME (Modern)
@@ -17,7 +17,7 @@ minimal_mistakes_skin: "default"
 # =====================
 author:
     name: "Lisa Hom"
-    avatar: "/assets/img/Lisa.jpg" # ← Fixed from .heic
+    avatar: "assets/img/Lisa.jpg" # ← Fixed from .heic
     bio: "Backend developer focused on building robust server-side logic, scalable databases, and intuitive APIs that power modern web and mobile applications. "
     email: "lisah246@gmail.com"
     links:
@@ -36,7 +36,7 @@ author:
 # =====================
 # BRANDING
 # =====================
-logo: "/assets/img/dae_logo.jpg" # ← Fixed from .avif
+logo: "assets/img/dae_logo.jpg" # ← Fixed from .avif
 
 # =====================
 # PLUGINS (safe + GitHub Pages supported)
