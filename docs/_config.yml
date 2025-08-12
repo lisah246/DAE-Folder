@@ -1,5 +1,51 @@
-theme: minima
+# Site settings
+title: Lisa Hom
+email: lisah246@gmail.com
+description: "Backend Developer | Tech Enthusiast | Innovator"
+baseurl: "/docs"
+url: "https://lisah246.github.io/DAE-Folder/"
 
-remote_theme: pages-themes/slate@v0.2.0
+# Theme
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+
+# Author
+author:
+  name: "Your Name"
+  avatar: "/assets/img/your-headshot.jpg"
+  bio: "Cybersecurity Professional passionate about secure systems and automation."
+  location: "Your Location"
+  email: "your.email@example.com"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/yourprofile"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourusername"
+
+# Plugins
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Navigation
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
