@@ -5,113 +5,94 @@ layout: single
 ---
 
 <div style="text-align:center; margin-bottom:2rem; padding:1.5rem; background:#f8f9fa; border-radius:8px;">
-  <h1 style="margin:0; color:#2c3e50;">Alex Rivera</h1>
-  <p style="margin:0.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student & Backend Developer</p>
-  <p style="margin:0; color:#7f8c8d;">📧 alex.rivera@email.com | 🔗 LinkedIn: /in/alexrivera | 🐙 GitHub: /alexrivera</p>
+  <h1 style="margin:0; color:#2c3e50;">Lisa Hom</h1>
+  <p style="margin:0.5rem 0; font-size:1.1rem; color:#34495e;">Backend Developer · Product-Minded Engineer</p>
+  <p style="margin:0; color:#7f8c8d;">📧 lisa.hom@email.com | 🔗 LinkedIn: /in/lisahom | 🐙 GitHub: /lisahom</p>
 </div>
 
 ## 🎓 Education
 
 **District Arts & Education (DAE)**  
-*Cybersecurity & Backend Development Program*  
-*Expected Graduation: May 2025*  
-*GPA: 3.8/4.0*
+*Backend Development Program*  
+*Expected Graduation: December 2025*  
+*GPA: 3.9/4.0*
 
 **Relevant Coursework:**
-- Network Security & Penetration Testing
-- Secure Software Development Lifecycle
-- Digital Forensics & Incident Response
-- Cloud Security Architecture
-- Cryptography & Applied Mathematics
+- Server-Side Programming with Node.js
+- Database Design & Management (SQLite, PostgreSQL)
+- API Development & Integration
+- Authentication & Authorization (JWT, bcrypt)
+- Cloud Deployment & DevOps Basics
 
 ---
 
 ## 💼 Experience
 
-**Security Analyst Intern** | *TechSecure Solutions* | *Jun 2024 - Present*
-- Monitored security events using SIEM platforms (Splunk, QRadar)
-- Investigated and responded to 50+ security incidents per week
-- Developed automated threat detection rules, reducing false positives by 30%
-- Created incident response playbooks for common attack scenarios
+**Product Manager** | *HealthTech Co.* | *2019 – 2024*  
+- Led cross-functional teams to deliver digital health products used by 10,000+ clinicians  
+- Translated user needs into technical requirements and product roadmaps  
+- Collaborated with engineering to prioritize backend performance and scalability  
+- Championed data-driven decision-making and user-centered design
 
-**Backend Developer** | *StartupLab* | *Jan 2024 - May 2024*
-- Built secure REST APIs using Python/Flask and Go
-- Implemented OAuth 2.0 authentication and JWT token management
-- Designed database schemas with security best practices
-- Conducted code reviews focusing on security vulnerabilities
+**Backend Developer (Capstone Project)** | *ProjectPulse* | *Jun 2025 – Present*  
+- Built RESTful APIs using Node.js and Express for project/task management  
+- Designed relational database schema and implemented SQLite migrations  
+- Developed JWT-based authentication and role-based access control  
+- Integrated file upload endpoints and reporting APIs  
+- Deployed backend on Vercel and frontend on Netlify using Next.js + ShadCN
 
 ---
 
 ## 🛠️ Technical Skills
 
 ### Programming Languages
-- **Python** - Security automation, data analysis, Flask/Django
-- **Go** - Backend services, CLI tools, concurrent programming
-- **TypeScript/JavaScript** - Frontend security implementations
-- **SQL** - Database design, query optimization, injection prevention
+- **JavaScript (Node.js)** – Backend development, Express APIs  
+- **SQL** – Schema design, queries, migrations (SQLite, PostgreSQL)  
+- **Python** – Scripting, automation, Flask basics  
+- **HTML/CSS** – Frontend integration with Next.js
 
-### Security Tools & Platforms
-- **SIEM**: Splunk, ELK Stack, QRadar
-- **Vulnerability Assessment**: Nessus, OpenVAS, Burp Suite
-- **Network Security**: Wireshark, Nmap, pfSense
-- **Incident Response**: MISP, TheHive, Volatility
+### Tools & Frameworks
+- **Express.js**, **Next.js**, **ShadCN**, **JWT**, **bcrypt**  
+- **Git**, **GitHub**, **Postman**, **Vercel**, **Netlify**
 
-### Cloud & Infrastructure
-- **AWS**: IAM, CloudTrail, GuardDuty, Security Hub
-- **Azure**: Security Center, Sentinel, Key Vault
-- **Containerization**: Docker, Kubernetes security
-- **Infrastructure as Code**: Terraform, Ansible
-
-### Development & DevSecOps
-- **Version Control**: Git, GitHub Actions, GitLab CI/CD
-- **Security Testing**: SAST, DAST, dependency scanning
-- **Monitoring**: Prometheus, Grafana, ELK Stack
+### DevOps & Deployment
+- **Docker** (basic containerization)  
+- **CI/CD** (GitHub Actions)  
+- **Cloud Platforms**: Vercel, Netlify
 
 ---
 
-## 🏆 Certifications & Training
+## 🚀 Projects
 
-**In Progress:**
-- CompTIA Security+ (Scheduled: March 2025)
-- AWS Certified Security - Specialty (Scheduled: June 2025)
+**ProjectPulse** | *Node.js, Express, SQLite, Next.js*  
+- Full-stack project management app with secure login, CRUD APIs, and file uploads  
+- Features include client/project/task tracking, reporting endpoints, and role-based access  
+- Deployed live with frontend/backend integration and responsive UI
 
-**Completed:**
-- SANS SEC401: Security Essentials Bootcamp (2024)
-- Certified Ethical Hacker (CEH) - EC-Council (2024)
-- Python for Cybersecurity - Coursera (2023)
+**Digital Pill Diary (Product Lead)**  
+- Designed and launched a medication tracking MVP for chronic care patients  
+- Defined backend requirements and collaborated with engineers on API design  
+- Conducted user testing and iterated based on feedback
 
----
-
-## 🚀 Key Projects
-
-**Secure File Storage System** | *Python, Flask, AES-256*
-- Implemented end-to-end encryption with zero-knowledge architecture
-- Built role-based access control system with audit logging
-- Achieved 99.9% uptime with comprehensive security monitoring
-
-**SOC Automation Toolkit** | *Python, Splunk API, Docker*
-- Reduced alert triage time by 60% through ML-based prioritization
-- Integrated threat intelligence feeds (MISP, STIX/TAXII)
-- Automated incident response workflows for common scenarios
-
-**API Security Scanner** | *Go, REST APIs*
-- Developed custom vulnerability scanner for web applications
-- Identified OWASP Top 10 vulnerabilities with 95% accuracy
-- Integrated with CI/CD pipelines for continuous security testing
+**Adventure Quest: Text-Based Game for Kids** | *Python, Pygame, Tkinter*  
+- Created an interactive adventure game to teach math, technology, and reasoning skills  
+- Implemented quiz challenges, inventory management, and life point mechanics  
+- Developed a leaderboard system and save/load functionality using JSON  
+- Designed for educational engagement with playful storytelling and visual feedback
 
 ---
 
 ## 🎯 Professional Interests
 
-- **Security Operations**: SOC analysis, threat hunting, incident response
-- **Application Security**: Secure coding, vulnerability assessment
-- **Cloud Security**: Infrastructure protection, compliance automation
-- **DevSecOps**: Security integration in development workflows
+- **Backend Engineering**: API design, database architecture, authentication  
+- **Product-Driven Development**: Building with user impact in mind  
+- **Tech for Good**: Tools that improve healthcare, education, and accessibility  
+- **Continuous Learning**: Always exploring new frameworks and best practices
 
 ---
 
 <div style="text-align:center; margin-top:2rem; padding:1rem; background:#e8f4fd; border-radius:8px;">
-  <p style="margin:0; font-style:italic; color:#2c3e50;">"Passionate about building secure systems that protect organizations while enabling innovation."</p>
+  <p style="margin:0; font-style:italic; color:#2c3e50;">"I’m passionate about building backend systems that empower people and scale with purpose."</p>
   
   <div style="margin-top:1rem;">
     <img src="{{ '/assets/img/dae-logo.jpg' | relative_url }}" alt="DAE Logo" style="height:30px; opacity:0.7;">
