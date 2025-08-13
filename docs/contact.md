@@ -5,10 +5,10 @@ layout: single
 ---
 
 <div style="text-align:center; margin-bottom:3rem;">
-  <img src="{{ '/assets/img/pinky.jpg' | relative_url }}" alt="Alex Rivera" 
+  <img src="{{ 'assets/img/Lisa.jpg' | relative_url }}" alt="Lisa Hom" 
        style="max-width:150px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
   <h2 style="margin:1rem 0 0.5rem; color:#2c3e50;">Let's Connect</h2>
-  <p style="color:#7f8c8d; font-size:1.1rem;">I'm always interested in discussing cybersecurity, backend development, and new opportunities.</p>
+  <p style="color:#7f8c8d; font-size:1.1rem;">I'm always interested in discussing backend development, product management, UX, and new opportunities.</p>
 </div>
 
 ## 📬 Get in Touch
