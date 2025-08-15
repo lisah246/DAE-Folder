@@ -79,6 +79,6 @@ Created a security scanner for REST APIs to detect vulnerabilities and misconfig
   <p><a href="/contact/" style="background:#007bff; color:white; padding:0.5rem 1rem; text-decoration:none; border-radius:4px;">Get in Touch</a></p>
   
   <div style="margin-top:2rem;">
-    <img src="{{ '/assets/img/dae-logo.jpg' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.7;">
+    <img src="{{ '/assets/img/dae_logo.jpg' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.7;">
   </div>
 </div>
