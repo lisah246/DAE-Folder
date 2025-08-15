@@ -17,7 +17,7 @@ Seasoned Product Manager experienced in healthcare technology. Currently, enhanc
 Passionate about delivering digital solutions to enable business transformation. Adept at deﬁning product strategy, stakeholder management, leading cross-functional teams, and translating user insights into impactful features. Passionate about optimizing processes and aligning product outcomes with organizational goals through data-driven decisions and Agile methodologies.
 
 ---
-## 🎓 District Arts & Education (DAE)**  
+## 🎓 DISTRICT ARTS & EDUCATION (DAE)**  
 *Backend Development Program*  
 *Expected Graduation: December 2025*  
 
@@ -27,10 +27,10 @@ Hands-on tech program building real-world skills in AI, Python, mobile/web devel
 
 ## TECHNICAL SUMMARY
 
-Product Management: 	Product Strategy, Roadmapping, Feature Prioritization, KPI Deﬁnition, Stakeholder Management
-UX / Research: 			User Interviews, Journey Mapping, Wireframing, Usability Testing
-Tools: 				Rally, Jira, Conﬂuence, Visio, LucidChart, Miro, Tableau, Salesforce
-Methodologies: 			Agile/Scrum, Product Lifecycle Management, DevSecOps
+- Product Management: 	Product Strategy, Roadmapping, Feature Prioritization, KPI Deﬁnition, Stakeholder Management
+- UX / Research: 			User Interviews, Journey Mapping, Wireframing, Usability Testing
+- Tools: 				Rally, Jira, Conﬂuence, Visio, LucidChart, Miro, Tableau, Salesforce
+- Methodologies: 			Agile/Scrum, Product Lifecycle Management, DevSecOps
 
 ___
 
@@ -43,17 +43,17 @@ ___
 - Integrating file upload endpoints and reporting APIs  
 - Deploying backend on Vercel and frontend on Netlify using Next.js + ShadCN
 
-- Refer to LinkedIn: linkedin.com/in/lhom01/ for product management experience.
+Refer to LinkedIn: linkedin.com/in/lhom01/ for product management experience.
 ---
 
 ## 🛠️ Technical Skills
 
-Languages:			JavaScript, TypeScript, SQL, CSS
-Frontend: 			Next.js, React, ShadCN UI, Tailwind CSS, Recharts
-Backend: 			  Node.js, Express.js, Sequelize ORM, Nodemailer, Auth.js
-Database: 			SQLite
-Tools: 				  jsPDF, Multer, Faker.js
-Deployment:     Vercel, Netlify Functions
+- Languages:			JavaScript, TypeScript, SQL, CSS
+- Frontend: 			Next.js, React, ShadCN UI, Tailwind CSS, Recharts
+- Backend: 			  Node.js, Express.js, Sequelize ORM, Nodemailer, Auth.js
+- Database: 			SQLite
+- Tools: 				  jsPDF, Multer, Faker.js
+- Deployment:     Vercel, Netlify Functions
 
 ---
 
