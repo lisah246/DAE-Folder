@@ -1,14 +1,16 @@
-What is a “stack”?
+# What is a “stack”?
 
 A stack in programming is just a way to organize data using the rule called “Last In, First Out” (LIFO) — the last thing you put on is the first thing you take off like a stack of plates.
 
-Why do we care?
+To implement a stack is to create a working data structure that adheres to the Last-In, First-Out (LIFO) principle. 
+
+# Why do we care?
 
 Programs often need a temporary place to keep track of things:
 
 Example: A web browser uses a stack for the Back button (the last page you visited is the first you go back to).
 
-What do the terms mean?
+# What do the terms mean?
 
 push(value)
 👉 Means “put something on top of the stack.”
@@ -31,7 +33,7 @@ size()
 👉 Counts how many items are in the stack.
 Example: “We have 3 pancakes in the stack.”
 
-The big picture
+# The big picture
 
 Your instructor gave you this exercise because:
 
@@ -41,7 +43,8 @@ It makes you practice using Python lists (append, pop, len, etc.).
 
 It teaches you how to build tools (functions) that match real-world ideas (like Back button, undo, etc.).
 
-What does “implement” mean?
+
+# What does “implement” mean?
 
 Fill in the TODOs with real Python code so the functions actually work.
 
