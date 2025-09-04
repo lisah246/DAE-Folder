@@ -165,7 +165,7 @@ def intro():
     # Initialize pygame mixer and play music
     pygame.mixer.init()
     try:
-        pygame.mixer.music.load(r"C:\Users\Lisa\Desktop\DAE-Folder\Semester 1_Python_Adventure_Game\python_1\intro_theme.mp3")
+        pygame.mixer.music.load(r"C:\Users\Lisa\Desktop\DAE-Folder\python_1\intro_theme.mp3")
         pygame.mixer.music.play(-1)  # Loop indefinitely
     except Exception as e:
         print(f"⚠️ Could not load music: {e}")
@@ -186,7 +186,7 @@ def intro():
 
     # Load and display the image
     try:
-        img_original = Image.open(r"C:\Users\Lisa\Desktop\DAE-Folder\Semester 1_Python_Adventure_Game\python_1\forest_intro.png")
+        img_original = Image.open(r"C:\Users\Lisa\Desktop\DAE-Folder\python_1\forest_intro.png")
         img_resized = img_original.resize((300, 300))  # Resize PIL Image
         img = ImageTk.PhotoImage(img_resized)          # Convert to PhotoImage for tkinter
     
