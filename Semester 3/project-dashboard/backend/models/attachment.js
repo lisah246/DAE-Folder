@@ -1,30 +1,15 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Attachment extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      Attachment.associate = function(models) {
-      Attachment.belongsTo(models.Task, { foreignKey: 'taskId' });
-  };
-    }
-  }
-  Attachment.init({
+  const Attachment = sequelize.define('Attachment', {
     taskId: DataTypes.INTEGER,
     originalName: DataTypes.STRING,
     storedName: DataTypes.STRING,
     mimeType: DataTypes.STRING,
     size: DataTypes.INTEGER,
     uploadedAt: DataTypes.DATE
-  }, {
-    sequelize,
-    modelName: 'Attachment',
-  });
+  }, {});
+  Attachment.associate = (models) => {
+    Attachment.belongsTo(models.Task, { foreignKey: 'taskId' });
+  };
   return Attachment;
 };
