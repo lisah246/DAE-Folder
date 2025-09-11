@@ -1,0 +1,15 @@
+3NF Proof for Project Dashboard
+
+1) No repeating groups:
+   Clients, Projects, Tasks, Notes, Attachments are separate tables.
+
+2) 2NF: All non-key attributes depend on the whole primary key:
+   - Projects: (name, description, dueDate) depend on Projects.id; clientId is a FK.
+   - Tasks: (title, status, dueDate) depend on Tasks.id; projectId is a FK.
+   - Notes depend on Notes.id; Attachments depend on Attachments.id.
+
+3) 3NF: No transitive dependencies:
+   - Client attributes live only in Clients (not duplicated elsewhere).
+   - Project attributes live only in Projects (not duplicated in Tasks/Notes).
+   - Task attributes live only in Tasks.
+Therefore the schema satisfies 3NF.

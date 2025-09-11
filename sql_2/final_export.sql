@@ -5,7 +5,7 @@ INSERT INTO hello VALUES(1,'Hello SQLite!');
 CREATE TABLE Clients(
   id INTEGER PRIMARY KEY, name TEXT NOT NULL, email TEXT UNIQUE, phone TEXT
 );
-INSERT INTO Clients VALUES(1,'Acme Co','info@acme.com','555-1001');
+INSERT INTO Clients VALUES(1,'Acme Co','info@acme.com','555-1111');
 INSERT INTO Clients VALUES(2,'Globex Inc','hello@globex.io','555-1002');
 INSERT INTO Clients VALUES(3,'Initech','contact@initech.com','555-1003');
 CREATE TABLE Projects(
