@@ -33,3 +33,5 @@ As I approach graduation in **December 2025**, I'm seeking opportunities in **Ba
 <div style="text-align:center; margin-top:2rem;">
   <img src="{{ '/assets/img/dae_logo.jpg' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.8;">
 </div>
+
+[![pages-build-deployment](https://github.com/lisah246/DAE-Folder/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/lisah246/DAE-Folder/actions/workflows/pages/pages-build-deployment)
