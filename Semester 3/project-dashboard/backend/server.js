@@ -1,7 +1,9 @@
 // backend/server.js
 const express = require("express");
-const app = express();
+const cors = require('cors');        // ← Add this import
+const app = express();               // ← app must be defined first
 
+app.use(cors());                     // ← Move this line here (after app is defined)
 app.use(express.json());
 
 // ⬇️ IMPORT ROUTES — only once

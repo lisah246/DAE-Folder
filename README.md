@@ -1,85 +1,88 @@
-Main repository README.md file
+# 6-Month Backend Web Development Track
 
-# Prompt Engineering Documentation
+A comprehensive track emphasizing backend development, full-stack integration, and workforce readiness.
 
-## Project Goal
-Build a text-based survival adventure game with a Tkinter GUI. The player navigates rooms, solves challenges, and survives hazards.
+# Portfolio Links
 
-## Initial Prompt Design Objectives
-- Generate an adventure game idea using Tkinter
-- Help structure a 2-week project schedule
-- Design flowchart and algorithm
-- Get guidance on logic validation and scoring system
+**LinkedIn**
+https://www.linkedin.com/in/lhom01/
 
-## Prompt Examples and AI Responses
+**GitHub**
+https://lisah246.github.io/DAE-Folder/
 
-**Prompt #1:**
-"Can you help me design a 2-week project that includes Python, Tkinter, Git, and flowcharts?"
-→ *AI provided full breakdown and schedule.*
+## Structure
 
-**Prompt #2:**
-"Can you generate a flowchart from this algorithm?"
-→ *AI returned image + FigJam-ready version.*
+- **Semester 1**: Foundations in Unix, Python, Logic, and early prompt engineering experiments  
+  - unix_1, unix_2, python_1, python_2, logic_1, Tkinter survival game (prompt engineering)
 
-**Prompt #3:**
-"What does 'Begin writing prompt documentation' mean?"
-→ *Clarified and gave examples like this section.*
+- **Semester 2**: Workforce Development & Professional Artifacts  
+  - LinkedIn profiles, resumes, GitHub portfolio pages, foundation deck, IDP, feedback summaries, project board
 
-## Notes:
-- Track any hallucinations (e.g., AI gave flawed logic or misread requirement — note it and how you corrected it)
-- Track where AI helped with **programming**, **text generation**, and **image generation**
+- **Semester 3**: Backend Development & Full-Stack Integration  
+  - Client & Project Management Dashboard (Node.js, Express, SQLite/Sequelize, Next.js, ShadCN, Tailwind CSS, PDF export, notifications, role-based dashboards)
 
-## Multimodal Use Evidence
-- Programming: Python logic, Tkinter GUI
-- Text Generation: Schedule, rubric tracker, documentation
-- Image Generation: Flowchart visual
+## Highlights
 
-## Prompt Iteration Log
+- **Backend Development**: Node.js + Express + SQLite/Sequelize ORM  
+- **Frontend Development**: Next.js with ShadCN UI + Tailwind CSS  
+- **Project Management Features**: CRUD for projects/clients/tasks, PDF reporting, notifications, role-based dashboards  
+- **Workforce Development**: Professional resumes, LinkedIn profiles, and GitHub portfolios  
+- **Artifacts**: Project plan, design doc, weekly milestones, deployment workflow  
 
-| Date | Prompt | AI Response Summary | Notes/Corrections |
-|------|--------|---------------------|-------------------|
-|      |        |                     |                   |
+## Tech Stack
 
-## Token Count
-[Track estimated token use across your interactions, especially if exporting later.]
+**Languages**
+- JavaScript (Node.js, React/Next.js)
+- SQL (SQLite via Sequelize ORM)
+- TypeScript (frontend)
+- CSS (Tailwind CSS + TweakCN)
 
-**Class Notes**
+**Backend**
+- Runtime: Node.js  
+- Framework: Express.js  
+- ORM: Sequelize with SQLite  
+- Email: Nodemailer  
 
-command shift v to preview
+**Frontend**
+- Framework: Next.js (React-based)  
+- UI Library: ShadCN  
+- Styling: Tailwind CSS + TweakCN  
+- Charts: Chart.js or Recharts  
 
-# H1 - Title
-## H2 - Section
-### H3 - Subsection
+**Additional Tools**
+- PDF generation: jsPDF or pdf-lib  
+- Authentication: Custom role-based (Auth.js)  
+- File Handling: Multer  
+- Demo Data: Faker.js  
 
-**bold**
+**Deployment**
+- Frontend: Vercel  
+- Backend: Netlify Functions  
+- Database: SQLite (with migration path to PostgreSQL)  
 
-*italic*
+## Navigation
 
-~~strikethrough~~
+- [Semester 2 README](./semester2/README.md)
+- [Semester 3 README](./semester3/README.md)
 
-- Item
-- Another Item
-    - Nested Item
+## Setup Instructions
 
-1. First
-2. Second
+Clone the repo and install dependencies:
 
-[Google] (https://vscodeedu.com/courses/intro-to-python)
+```bash
+git clone https://github.com/YOUR_USERNAME/backend-track.git
+cd backend-track
 
-! [Alt text] (path to your png image)
+## Backend
+cd backend
+npm install
+npm run dev
 
-user_age =[20, 14 15]
+API available at: http://localhost:8000/api
 
-for item in user_age:
-    need to tab the rest
-    if
-    elif
-    else
+## Frontend
+cd frontend
+npm install
+npm run dev
 
-
-user_age = int(input("Enter your age:"))
-if user_age<=10:
-    print("Your are a child")
-elif user_age <= 18:
-    print("You are an adult")
-
+Frontend available at: http://localhost:3000
