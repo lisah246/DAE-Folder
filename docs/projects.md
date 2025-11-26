@@ -13,17 +13,18 @@ layout: single
 ![alt text](image.png)
 ![alt text](image-1.png)
 
-## 📁 ProjectPulse – Full-Stack Project Management App
+## 📁 ProjectPulse – Full-Stack Project Management 
 <div style="margin-bottom: 30px;">
-  <img src="ProjectPulseDashboard.PNG" alt="Dashboard">
-</div>
 
-<div style="margin-bottom: 30px;">
-  <img src="ProjectPulseProjectDetails.PNG" alt="Details">
+![alt text](ProjectPulseDashboard-1.PNG)
 </div>
-
 <div style="margin-bottom: 30px;">
-  <img src="ProjectPulseProjects.PNG" alt="Projects">
+
+![alt text](ProjectPulseProjects-1.PNG)
+</div>
+<div style="margin-bottom: 30px;">
+
+![alt text](ProjectPulseProjectDetails-1.PNG)
 </div>
 
 <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #007bff;">
