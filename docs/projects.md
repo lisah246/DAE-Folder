@@ -14,18 +14,9 @@ layout: single
 ![alt text](image-1.png)
 
 ## 📁 ProjectPulse – Full-Stack Project Management 
-<div style="margin-bottom: 30px;">
-
-![alt text](ProjectPulseDashboard-1.PNG)
-</div>
-<div style="margin-bottom: 30px;">
-
-![alt text](ProjectPulseProjects-1.PNG)
-</div>
-<div style="margin-bottom: 30px;">
-
-![alt text](ProjectPulseProjectDetails-1.PNG)
-</div>
+![alt text](ProjectPulseDashboard-2.PNG)
+![alt text](ProjectPulseProjects-2.PNG)
+![alt text](ProjectPulseProjectDetails-2.PNG)
 
 <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #007bff;">
   <p><strong>Tech Stack:</strong> Node.js, Express, SQLite, JWT, Next.js, ShadCN</p>
